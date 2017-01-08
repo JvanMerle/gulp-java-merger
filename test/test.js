@@ -54,7 +54,7 @@ describe('gulp-java-merger', function() {
             gulp.src('test/input/withpackage.java')
                 .pipe(merge('merged.java', true))
                 .pipe(assert.length(1))
-                .pipe(assert.first(function(d) { d.contents.toString().split('\n').length.should.eql(4); }))
+                .pipe(assert.first(function(d) { d.contents.toString().split('\n').length.should.eql(6); }))
                 .pipe(assert.end(done));
         });
     });
