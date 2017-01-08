@@ -21,7 +21,7 @@ gulp.task('default', function() {
 });
 ```
 
-By default, the first package first is added. If you don't want any package line at all, add `false` as second parameter:
+By default, the first package line is added. If you don't want any package line at all, add `false` as second parameter:
 
 ```javascript
 var merge = require('gulp-java-merger');
