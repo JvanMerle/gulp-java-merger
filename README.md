@@ -28,7 +28,7 @@ var merge = require('gulp-java-merger');
 
 gulp.task('default', function() {
     gulp.src('input/*.java')
-        .pipe(merge('merged.java'), false)
+        .pipe(merge('merged.java', false))
         .pipe(gulp.dest('output/')); 
 });
 ```

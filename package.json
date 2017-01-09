@@ -1,6 +1,6 @@
 {
   "name": "gulp-java-merger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A gulp plugin to make it easy to merge multiple .java files into one, aswell as automatically removing 'public' from class declarations (one .java file can't have multiple public classes/interfaces) and making sure there are no duplicate imports.",
   "main": "index.js",
   "scripts": {
