@@ -21,14 +21,14 @@ gulp.task('default', function() {
 });
 ```
 
-By default, the first package line is added. If you don't want any package line at all, add `false` as second parameter:
+By default, the first package line is added. If you don't want any package line at all, add `true` as second parameter:
 
 ```javascript
 var merge = require('gulp-java-merger');
 
 gulp.task('default', function() {
     gulp.src('input/*.java')
-        .pipe(merge('merged.java', false))
+        .pipe(merge('merged.java', true))
         .pipe(gulp.dest('output/')); 
 });
 ```
