@@ -28,8 +28,8 @@ module.exports = function(fileName, removePackage = false) {
         
         var firstLines = lines.slice(0, firstIndex !== -1 ? firstIndex : lines.length);
         for (var i = 0, iMax = firstLines.length; i < iMax; i++) {
-            if (firstLines[i].startsWith('package ') && package === undefined) {
-                package = firstLines[i];
+            if (firstLines[i].startsWith('package ')) {
+                if (package === undefined) package = firstLines[i];
                 importEndIndex = -1;
             } else if (firstLines[i].startsWith('import ')) {
                 imports.push(firstLines[i]);
