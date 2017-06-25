@@ -1,19 +1,16 @@
 # Gulp Java Merger
-
 [![npm](https://img.shields.io/npm/v/gulp-java-merger.svg)](https://www.npmjs.com/package/gulp-java-merger)
 
 A gulp plugin to make it easy to merge multiple .java files into one, aswell as automatically removing 'public' from class declarations (one .java file can't have multiple public classes/interfaces) and making sure there are no duplicate imports.
 
 ## Install
-
 Install with [npm](https://www.npmjs.com/).
 
 ```bash
 npm install --save-dev gulp-java-merger
 ```
 
-# Example
-
+## Example
 ```javascript
 var merge = require('gulp-java-merger');
 
@@ -26,8 +23,7 @@ gulp.task('default', function() {
 });
 ```
 
-# Usage
-
+## Usage
 merge(fileName, options)
 
 - `fileName`: The name of the generated file
@@ -35,8 +31,7 @@ merge(fileName, options)
   - `publicMain`: Make all classes containing a `public static void main` file public.
   - `removePackage`: Remove the package line on-top of the file.
 
-# A few things
-
+## A few things
 - Only works for a single package (i.e. you can't merge two packages into one bundled file).
 - Assumes all files have only one class/enum/interface in it (not counting inner classes).
 
