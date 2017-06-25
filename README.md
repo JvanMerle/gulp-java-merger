@@ -37,4 +37,4 @@ merge(fileName, options)
 - Only works for a single package (i.e. you can't merge two packages into one bundled file).
 - Assumes all files have only one class/enum/interface in it (not counting inner classes).
 
-Note that this is not meant for production code. It's originally made to merge java bot code in [CodinGame](https://www.codingame.com/) contests.
+Note that this is not meant for production code. It's originally made to merge Java bot code in [CodinGame](https://www.codingame.com/) contests.
