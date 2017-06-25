@@ -60,7 +60,7 @@ module.exports = function(fileName, options) {
         unshift = true;
       }
 
-      code = code.join('\n').trim() + '\n';
+      code = code.join('\n').trim();
 
       if (unshift) {
         processedCode.unshift(code);
@@ -92,19 +92,17 @@ module.exports = function(fileName, options) {
     let finalFile = '';
 
     if (package !== null && !options.removePackage) {
-      finalFile += package;
-      if (imports.length > 0 || processedCode.length > 0) {
-        finalFile += '\n\n';
-      }
+      finalFile += package + '\n';
     }
 
     if (imports.length > 0) {
+      if (package !== null && !options.removePackage) finalFile += '\n';
       finalFile += imports.join('\n') + '\n';
     }
 
     if (processedCode.length > 0) {
       if (imports.length > 0 || (package !== null && !options.removePackage)) finalFile += '\n';
-      finalFile += processedCode.join('\n');
+      finalFile += processedCode.join('\n\n') + '\n';
     }
 
     cb(null, new File({

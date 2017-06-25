@@ -63,7 +63,7 @@ describe('gulp-java-merger', function() {
         }))
         .pipe(assert.length(1))
         .pipe(assert.first(function(d) {
-          d.contents.toString().split('\n').length.should.eql(5);
+          d.contents.toString().split('\n').length.should.eql(7);
         }))
         .pipe(assert.end(done));
     });

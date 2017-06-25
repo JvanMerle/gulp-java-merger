@@ -26,10 +26,10 @@ gulp.task('default', function() {
 ## Usage
 merge(fileName, options)
 
-- `fileName`: The name of the generated file
+- `fileName`: The name of the generated file.
 - `options`
-  - `publicMain`: Make all classes containing a `public static void main` method public.
-  - `removePackage`: Remove the package line on-top of the file.
+  - `publicMain` (default: `false`): Make all classes containing a `public static void main` method public.
+  - `removePackage` (default: `false`): Remove the package line on-top of the file.
 
 ## A few things
 - Only works for a single package (i.e. you can't merge two packages into one bundled file).
