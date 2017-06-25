@@ -1,25 +1,25 @@
 {
   "name": "gulp-java-merger",
-  "version": "1.0.7",
-  "description": "A gulp plugin to make it easy to merge multiple .java files into one, aswell as automatically removing 'public' from class declarations (one .java file can't have multiple public classes/interfaces) and making sure there are no duplicate imports.",
+  "version": "2.0.0",
+  "description": "A gulp plugin to make it easy to merge multiple .java files into one.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "repository": "JvanMerle/gulp-java-merger",
-  "author": "Jasper van Merle (https://jaspervanmerle.com/)",
+  "repository": "jmerle/gulp-java-merger",
+  "author": "Jasper van Merle",
   "license": "MIT",
   "keywords": [
     "gulpplugin"
   ],
+  "dependencies": {
+    "through2": "^2.0.3",
+    "vinyl": "^2.0.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "mocha": "^3.2.0",
     "should": "^11.1.2",
     "stream-assert": "^2.0.3"
-  },
-  "dependencies": {
-    "through2": "^2.0.3",
-    "vinyl": "^2.0.1"
   }
 }
