@@ -1,6 +1,6 @@
 {
   "name": "gulp-java-merger",
-  "version": "2.0.0",
+  "version": "1.0.6",
   "description": "A gulp plugin to make it easy to merge multiple .java files into one.",
   "main": "index.js",
   "scripts": {

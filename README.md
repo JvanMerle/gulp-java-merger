@@ -1,4 +1,7 @@
 # Gulp Java Merger
+
+[![npm](https://img.shields.io/npm/v/gulp-java-merger.svg)](https://www.npmjs.com/package/gulp-java-merger)
+
 A gulp plugin to make it easy to merge multiple .java files into one, aswell as automatically removing 'public' from class declarations (one .java file can't have multiple public classes/interfaces) and making sure there are no duplicate imports.
 
 ## Install
